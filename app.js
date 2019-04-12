@@ -141,3 +141,8 @@ app.get("/:listName", function(req, res){
   });
 
 });
+
+app.post("/customList", function(req, res){
+  const listName = req.body.customList;
+  res.redirect("/"+listName);
+})

@@ -19,14 +19,19 @@
 
 
       <form class="item" action="/" method="post">
-        <input type="text" name="listItem" value="" placeholder="New Item" autocomplete="off">
+        <input type="text" id="newItem" name="listItem" required placeholder="New Item" autocomplete="off">
         <button type="submit" name="list" value=<%= listTitle  %>>+</button>
       </form>
 
     </div>
 
       <div class="about">
-        <a class="" href="/about">About</a>
+        <form class="" action="/customList" method="post">
+          <input type="text" id="customList" name="customList" required placeholder="Custom List Name" autocomplete="off">
+          <a href="#" onclick="this.form.submit()">Go</a>
+          <a class="" href="/about">About</a>
+        </form>
+
       </div>
 
 
