@@ -26,9 +26,9 @@
     </div>
 
       <div class="about">
-        <form class="" action="/customList" method="post">
+        <form id="cList" action="/customList" method="post">
           <input type="text" id="customList" name="customList" required placeholder="Custom List Name" autocomplete="off">
-          <a href="#" onclick="this.form.submit()">Go</a>
+          <a href="#" onclick="document.getElementById('cList').submit();">Go</a>
           <a class="" href="/about">About</a>
         </form>
 
