@@ -51,7 +51,7 @@ p {
   color: #00204a;
 }
 
-form {
+form.item {
   text-align: center;
   margin-left: 20px;
 }
@@ -67,6 +67,25 @@ button {
   padding-bottom: 6px;
   border-width: 0;
 }
+
+.about{
+  text-align: center;
+  margin-bottom: 11px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #976ede;
+  padding: 13px;
+  border-radius: 8px;
+}
+a:hover, button:hover{
+  background-color: slateblue;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 
 input[type="text"] {
   text-align: center;
