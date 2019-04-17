@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const bodyParser = require("body-parser");
 const date = require(__dirname+"/date.js");
@@ -15,8 +16,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 app.locals._ = _; //This allows for us to use lodash across the app
-
-mongoose.connect("mongodb+srv://kstheking:KhushalGauri%401234@cluster0-7rnzm.mongodb.net/todolistDB",{useNewUrlParser: true});
+mongoose.connect(process.env.MONGODB_SERVER_URL+"/todolistDB",{useNewUrlParser: true});
 
 const itemsSchema = new mongoose.Schema({
   name:{
